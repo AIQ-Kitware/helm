@@ -23,8 +23,6 @@ class VLLMClient(OpenAILegacyCompletionsClient):
         **kwargs,
     ):
         super().__init__(
-            tokenizer=tokenizer,
-            tokenizer_name=tokenizer_name,
             cache_config=cache_config,
             api_key="EMPTY",
             org_id=None,
